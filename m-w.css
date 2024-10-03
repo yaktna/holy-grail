@@ -1,0 +1,31 @@
+dialog{
+  height: 100vh;
+  background-color: #0003;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.modal__content{
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.modal__title{
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.modal__close-botton{
+  top: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid black;
+  position: absolute;
+}
