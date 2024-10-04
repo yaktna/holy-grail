@@ -1,5 +1,7 @@
 # Code Minux - Introduction to GitHub
 
+[[Repo Stars](https://img.shields.io/github/stars/yaktna/Minux)]
+
 Content
 - [Description](https://www.CodeMinux.com)
 - [Join](https://www.CodeMinux.com)
