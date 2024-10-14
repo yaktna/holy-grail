@@ -25,14 +25,21 @@ p{
   text-wrap: pretty;
 }
 
+.header{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(201, 223, 243);
+}
+
 .header-navbar{
   background-color: rgb(79, 187, 245);
 }
 
 .header-navbar ul{
   display: flex;
-  padding: 0;
+  padding: 0 3px;
   margin-top: 0;
+  justify-content: center;
 }
 
 .header-navbar li{
@@ -52,6 +59,7 @@ nav a{
 
 .div-wrapper{
   max-width: 1024px;
+  margin-top: -15px;
 }
 
 .div-wrapper{
@@ -98,7 +106,7 @@ aside, main{
 
 main{
   min-width: 300px;
-  flex-grow: 2.5;
+  flex-grow: 2;
 }
 
 aside:last-child{
@@ -107,22 +115,28 @@ aside:last-child{
 
 .footer{
   margin-top: auto;
-  border: 1px solid #f00;
   background-color: #333;
   color: whitesmoke;
   padding: 40px;
   font-weight: bold;
   text-align: center;
+  flex-grow: 0.1;
 }
 
-@media screen and (max-width: 800px) {
-  aside:last-child{
-    display: none;
+@media screen and (max-width: 375px) {
+  .header-navbar a{
+    padding: 1px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .div-wrapper{
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  aside:last-child{
+    display: none;
   }
 }
