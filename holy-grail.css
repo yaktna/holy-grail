@@ -60,6 +60,7 @@ nav a{
 .div-wrapper{
   max-width: 1024px;
   margin-top: -15px;
+  flex-direction: column;
 }
 
 .div-wrapper{
@@ -101,7 +102,7 @@ aside, main{
   padding: 25px 20px;
   /* border: 1px solid #f00; */
   flex-basis: 0;
-  background-color: whitesmoke;
+  background-color:rgb(243, 249, 255);
 }
 
 main{
@@ -111,6 +112,7 @@ main{
 
 aside:last-child{
   min-width: 10rem;
+  display: none;
 }
 
 .footer{
@@ -129,14 +131,14 @@ aside:last-child{
   }
 }
 
-@media screen and (max-width: 480px) {
-  .div-wrapper{
-    flex-direction: column;
+@media screen and (min-width: 480px) {
+  aside:last-child{
+    display: block;
   }
 }
 
-@media screen and (max-width: 800px) {
-  aside:last-child{
-    display: none;
+@media screen and (min-width: 800px) {
+  .div-wrapper{
+    flex-direction: row;
   }
 }
