@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  font-family: "Roboto";
+  background-color: #ccc;
+}
+
+body, div{
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,200px);
+  grid-auto-rows: 80px;
+  grid-auto-rows: 150px;
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+  border: 3px solid springgreen;
+  gap: 20px;
+  width: 90vw;
+  margin: auto;
+}
+
+.grid-item{
+  background-color:  rgb(79, 187, 245);
+  padding: 10px;
+  font-size: 30px;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 2rem;
+}
