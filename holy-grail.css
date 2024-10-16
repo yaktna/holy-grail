@@ -60,7 +60,10 @@ nav a{
 .div-wrapper{
   max-width: 1024px;
   margin-top: -15px;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+>>>>>>> 2104efea5b43c05a2dc01f2fd5a45f889afcd6f7
 }
 
 .div-wrapper{
@@ -142,3 +145,10 @@ aside:last-child{
     flex-direction: row;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .header-navbar a{
+    padding: 1px;
+  }
+}
+
