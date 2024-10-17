@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+/* DINAMIC COLUMN */
+
+.container-3{
+  display: grid;
+  width: 90%;
+  /* height: 600px; */
+  /* outline: 4px solid greenyellow; */
+  margin: 40px auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  grid-template-rows: repeat(3,250px);
+}
+
+.item-3{
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.items-1{
+  background-color: slateblue;
+  background-image: url(facilito.png);
+}
+.items-2{
+  background-color: deeppink;
+  background-image: url(facilito.png);
+}
+.items-3{
+  background-color: tomato;
+  background-image: url(facilito.png);
+}
+.items-4{
+  background-color: darkseagreen;
+  background-image: url(facilito.png);
+}
+.items-5{
+  background-color: midnightblue;
+  background-image: url(facilito.png);
+}
+.items-6{
+  background-color: crimson;
+  background-image: url(facilito.png);
+}
