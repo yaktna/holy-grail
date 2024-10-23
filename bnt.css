@@ -1,0 +1,114 @@
+body{
+  margin: 0;
+  background-color: #ccc;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+button{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: none;
+  transition: 1s all;
+}
+
+.bnt-blue{
+  background-color: slateblue;
+}
+
+.bnt-blue:active{
+  font-size: 30px;
+}
+
+.bnt-red{
+  background-color: crimson;
+}
+
+.bnt-red:hover{
+  transform: scale(1.2);
+}
+
+.bnt-tomato{
+  background-color: tomato;
+}
+
+.element{
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin-left: 40px;
+  background-image: linear-gradient(pink, coral);
+  transition: .7s;
+}
+
+.element:target{
+  transform: translate(100%);
+}
+
+.element:hover{
+  width: 300px;
+  height: 300px;
+}
+
+
+/* input+label+input */
+
+input{
+  margin: 20px 20px;
+  padding: 1rem;
+  font-size: inherit;
+  border-radius: .5rem;
+  border: 1px solid grey;
+}
+
+input::placeholder{
+  padding-left: .5rem;
+  transition: ease .5s;
+}
+
+input:focus-visible{
+  outline: none;
+  font-size: 1.5rem;
+}
+
+input:focus + .label{
+  padding: 1em;
+  background-image: linear-gradient(hotpink,tomato);
+  transition: ease .7s;
+  border-radius: .5rem;
+}
+
+.label{
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+
+/* flag */
+
+.element-2{
+  width: max-content;
+  background-color: #ccc;
+  color: brown;
+  font-size: 2rem;
+  margin: 40px;
+  padding: 1em;
+}
+
+.element-2::before{
+  padding: 1rem;
+  content: "¡¡¡";
+  background-color: rgb(0, 150, 0);
+  color: #fff;
+}
+
+.element-2::after{
+  padding: 1rem;
+  content: "!!!";
+  background-color: rgb(224, 0, 0);
+  color: #fff;
+}
